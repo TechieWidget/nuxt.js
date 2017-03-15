@@ -22,11 +22,13 @@
 
 ## Getting started
 
+1. Run the following command line below:
+
 ```
 $ npm install nuxt --save
 ```
 
-Add a script to your package.json like this:
+2. Add a script to your package.json like this:
 
 ```json
 {
@@ -36,9 +38,9 @@ Add a script to your package.json like this:
 }
 ```
 
-After that, the file-system is the main API. Every .vue file becomes a route that gets automatically processed and rendered.
+3. After that, the file-system becomes the main API. Every .vue file becomes a route that gets automatically processed and rendered.
 
-Populate `./pages/index.vue` inside your project:
+4. Populate `./pages/index.vue` inside your project:
 
 ```html
 <template>
@@ -54,12 +56,12 @@ export default {
 </script>
 ```
 
-And then run:
+5. And then run:
 ```bash
 npm start
 ```
 
-Go to [http://localhost:3000](http://localhost:3000)
+6. Go to [http://localhost:3000](http://localhost:3000)
 
 So far, we get:
 
@@ -103,7 +105,7 @@ Learn more: https://nuxtjs.org/api/nuxt
 
 ## Using nuxt.js as a middleware
 
-You might want to use your own server with you configurations, your API and everything awesome your created with. That's why you can use nuxt.js as a middleware. It's recommended to use it at the end of your middleware since it will handle the rendering of your web application and won't call next().
+You might want to use your own server with your configurations, your API and everything awesome you have created with. That's why you can use nuxt.js as a middleware. It's recommended to use it at the end of your middleware since it will handle the rendering of your web application and won't call next().
 
 ```js
 app.use(nuxt.render)
